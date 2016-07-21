@@ -8,22 +8,22 @@
 
 import Foundation
 
-struct PersonService {
+class PersonService {
     
     // MARK: - Internal properties
     
-    static let sharedInstance = PersonService()
+    static var sharedInstance = PersonService()
     private(set) var currentPerson: Person?
     
     
     // MARK: - Internal functions
     
-    mutating func saveFirstName(firstName: String?) {
+    func saveFirstName(firstName: String?) {
         createCurrentIfNeeded()
         currentPerson?.firstName = firstName
     }
     
-    mutating func saveLastName(lastName: String?) {
+    func saveLastName(lastName: String?) {
         createCurrentIfNeeded()
         currentPerson?.lastName = lastName
     }
@@ -35,7 +35,7 @@ struct PersonService {
 
 private extension PersonService {
     
-    private mutating func createCurrentIfNeeded() {
+    private func createCurrentIfNeeded() {
         guard currentPerson == nil else { return }
         currentPerson = Person()
     }
