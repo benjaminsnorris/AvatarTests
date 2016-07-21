@@ -17,6 +17,11 @@ class Settings: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     
+    // MARK: - Internal properties
+    
+    var personService = PersonService()
+    
+    
     // MARK: - Lifecycle overrides
     
     override func viewDidLoad() {
@@ -53,6 +58,14 @@ extension Settings: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if textField == firstName {
+            personService.saveFirstName(textField.text)
+        } else if textField == lastName {
+            personService.saveLastName(textField.text)
+        }
     }
     
 }
