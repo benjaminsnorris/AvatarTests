@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -16,7 +17,57 @@
                     <view key="view" contentMode="scaleToFill" id="VxW-VZ-r40">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Pd-EHE">
+                                <rect key="frame" x="20" y="80" width="560" height="520"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ni9-Oz-Yr7">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="96"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-Eq-lrd">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="qkL-IM-5oZ"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="1eP-RE-dRX" id="8ba-rT-je5"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-Rt-cTY">
+                                                <rect key="frame" x="0.0" y="52" width="560" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="w6R-zq-bEK"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="1eP-RE-dRX" id="bh4-NR-cxN"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ni9-Oz-Yr7" secondAttribute="trailing" id="9bI-Br-NBc"/>
+                                    <constraint firstAttribute="bottom" secondItem="ni9-Oz-Yr7" secondAttribute="bottom" id="bZ9-ZF-yuB"/>
+                                    <constraint firstItem="ni9-Oz-Yr7" firstAttribute="top" secondItem="XwX-Pd-EHE" secondAttribute="top" id="h7x-hP-8zD"/>
+                                    <constraint firstItem="ni9-Oz-Yr7" firstAttribute="leading" secondItem="XwX-Pd-EHE" secondAttribute="leading" id="sI1-v7-1ge"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ni9-Oz-Yr7" firstAttribute="leading" secondItem="VxW-VZ-r40" secondAttribute="leadingMargin" id="BWW-zc-IcY"/>
+                            <constraint firstItem="TEh-AJ-7JJ" firstAttribute="top" secondItem="XwX-Pd-EHE" secondAttribute="bottom" id="D2s-lZ-qDy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ni9-Oz-Yr7" secondAttribute="trailing" id="Env-N6-3Bq"/>
+                            <constraint firstItem="XwX-Pd-EHE" firstAttribute="leading" secondItem="VxW-VZ-r40" secondAttribute="leadingMargin" id="JQW-n3-e5S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XwX-Pd-EHE" secondAttribute="trailing" id="TDp-b8-Mcs"/>
+                            <constraint firstItem="XwX-Pd-EHE" firstAttribute="top" secondItem="Wpc-hY-ZoJ" secondAttribute="bottom" constant="16" id="npW-Yi-yor"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uGy-02-fP4">
                         <barButtonItem key="rightBarButtonItem" systemItem="stop" id="6a6-ZI-ot9">
@@ -26,6 +77,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstName" destination="AK1-Eq-lrd" id="ODd-29-K3b"/>
+                        <outlet property="lastName" destination="5W3-Rt-cTY" id="bNU-KZ-awM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTg-Oi-CM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fPD-w2-wIw" userLabel="Exit" sceneMemberID="exit"/>
