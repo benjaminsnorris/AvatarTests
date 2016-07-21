@@ -46,6 +46,7 @@ private extension Main {
     private func update() {
         guard let person = personService.currentPerson else { reset(); return }
         avatar.update(with: person)
+        avatar.accessibilityLabel = String.localizedStringWithFormat(NSLocalizedString("Avatar for %@", comment: "Parameter is the person's name"), person.name)
         name.text = person.name
     }
     

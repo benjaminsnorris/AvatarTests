@@ -39,6 +39,7 @@ class TestedAvatarUITests: XCTestCase {
         close.tap()
         
         XCTAssertEqual(name.label, "Sir Lancelot")
+        XCTAssertEqual(avatar.label, "Avatar for Sir Lancelot")
     }
     
 }
