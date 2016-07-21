@@ -9,7 +9,7 @@
         <!--Settings-->
         <scene sceneID="BVc-Pq-RNZ">
             <objects>
-                <viewController id="1eP-RE-dRX" customClass="Settings" customModule="TestedAvatar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1eP-RE-dRX" customClass="Settings" customModule="TestedAvatar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wpc-hY-ZoJ"/>
                         <viewControllerLayoutGuide type="bottom" id="TEh-AJ-7JJ"/>
@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Pd-EHE">
-                                <rect key="frame" x="20" y="80" width="560" height="520"/>
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ni9-Oz-Yr7">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="96"/>
+                                        <rect key="frame" x="0.0" y="16" width="560" height="96"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-Eq-lrd">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
@@ -54,7 +54,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ni9-Oz-Yr7" secondAttribute="trailing" id="9bI-Br-NBc"/>
                                     <constraint firstAttribute="bottom" secondItem="ni9-Oz-Yr7" secondAttribute="bottom" id="bZ9-ZF-yuB"/>
-                                    <constraint firstItem="ni9-Oz-Yr7" firstAttribute="top" secondItem="XwX-Pd-EHE" secondAttribute="top" id="h7x-hP-8zD"/>
+                                    <constraint firstItem="ni9-Oz-Yr7" firstAttribute="top" secondItem="XwX-Pd-EHE" secondAttribute="top" constant="16" id="h7x-hP-8zD"/>
                                     <constraint firstItem="ni9-Oz-Yr7" firstAttribute="leading" secondItem="XwX-Pd-EHE" secondAttribute="leading" id="sI1-v7-1ge"/>
                                 </constraints>
                             </scrollView>
@@ -66,7 +66,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ni9-Oz-Yr7" secondAttribute="trailing" id="Env-N6-3Bq"/>
                             <constraint firstItem="XwX-Pd-EHE" firstAttribute="leading" secondItem="VxW-VZ-r40" secondAttribute="leadingMargin" id="JQW-n3-e5S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XwX-Pd-EHE" secondAttribute="trailing" id="TDp-b8-Mcs"/>
-                            <constraint firstItem="XwX-Pd-EHE" firstAttribute="top" secondItem="Wpc-hY-ZoJ" secondAttribute="bottom" constant="16" id="npW-Yi-yor"/>
+                            <constraint firstItem="XwX-Pd-EHE" firstAttribute="top" secondItem="Wpc-hY-ZoJ" secondAttribute="bottom" id="npW-Yi-yor"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uGy-02-fP4">
