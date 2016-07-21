@@ -6,7 +6,7 @@
 //   \______/
 //
 
-import Foundation
+import UIKit
 
 struct Person {
     
@@ -38,6 +38,21 @@ extension Person: NamePresentable {
     
     var familyName: String? {
         return lastName
+    }
+    
+}
+
+
+// MARK: - Avatar presentable
+
+extension Person: AvatarPresentable {
+    
+    var initialsString: String? {
+        return initials
+    }
+    
+    var image: UIImage? {
+        return nil
     }
     
 }
