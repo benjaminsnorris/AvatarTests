@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		70BE4E461D410A5B00808C83 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E441D410A5B00808C83 /* AvatarView.swift */; };
 		70BE4E471D410A5B00808C83 /* NamePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E451D410A5B00808C83 /* NamePresentable.swift */; };
+		70BE4E4C1D410B0100808C83 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E4B1D410B0100808C83 /* Person.swift */; };
 		70EE23561D40FC540009D5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23551D40FC540009D5B6 /* AppDelegate.swift */; };
 		70EE23581D40FC540009D5B6 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23571D40FC540009D5B6 /* Main.swift */; };
 		70EE235B1D40FC540009D5B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE23591D40FC540009D5B6 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		70BE4E441D410A5B00808C83 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarView.swift; path = Carthage/Checkouts/AvatarView/AvatarView/AvatarView.swift; sourceTree = SOURCE_ROOT; };
 		70BE4E451D410A5B00808C83 /* NamePresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NamePresentable.swift; path = Carthage/Checkouts/AvatarView/AvatarView/NamePresentable.swift; sourceTree = SOURCE_ROOT; };
+		70BE4E4B1D410B0100808C83 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Data/Person.swift; sourceTree = "<group>"; };
 		70EE23521D40FC540009D5B6 /* TestedAvatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestedAvatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE23551D40FC540009D5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EE23571D40FC540009D5B6 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = UI/Main.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			name = AvatarView;
 			sourceTree = "<group>";
 		};
+		70BE4E491D410ADE00808C83 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				70BE4E4B1D410B0100808C83 /* Person.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		70EE23491D40FC540009D5B6 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 			children = (
 				70EE23551D40FC540009D5B6 /* AppDelegate.swift */,
 				70EE23841D40FFD00009D5B6 /* UI */,
+				70BE4E491D410ADE00808C83 /* Data */,
 				70BE4E431D410A3F00808C83 /* External */,
 				70EE23831D40FFC80009D5B6 /* Resources */,
 			);
@@ -325,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BE4E4C1D410B0100808C83 /* Person.swift in Sources */,
 				70EE238B1D41042C0009D5B6 /* Settings.swift in Sources */,
 				70BE4E461D410A5B00808C83 /* AvatarView.swift in Sources */,
 				70EE23581D40FC540009D5B6 /* Main.swift in Sources */,
