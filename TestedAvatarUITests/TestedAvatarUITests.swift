@@ -28,6 +28,17 @@ class TestedAvatarUITests: XCTestCase {
         let settings = application.navigationBars.buttons["Settings"]
         XCTAssertTrue(settings.exists)
         settings.tap()
+        
+        let firstName = application.textFields["firstName"]
+        let lastName = application.textFields["lastName"]
+        firstName.tap()
+        firstName.typeText("Sir")
+        lastName.tap()
+        lastName.typeText("Lancelot")
+        let close = application.navigationBars.buttons["Close"]
+        close.tap()
+        
+        XCTAssertEqual(name.label, "Sir Lancelot")
     }
     
 }

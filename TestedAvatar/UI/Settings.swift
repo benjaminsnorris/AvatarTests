@@ -15,6 +15,7 @@ class Settings: UIViewController {
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var close: UIBarButtonItem!
     
     
     // MARK: - Internal properties
@@ -27,6 +28,8 @@ class Settings: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerForKeyboardNotifications()
+        
+        close.accessibilityLabel = NSLocalizedString("Close", comment: "Button title")
     }
     
 }

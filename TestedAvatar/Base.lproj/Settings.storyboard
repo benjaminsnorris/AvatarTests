@@ -26,6 +26,7 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-Eq-lrd">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="firstName"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="qkL-IM-5oZ"/>
                                                 </constraints>
@@ -38,6 +39,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-Rt-cTY">
                                                 <rect key="frame" x="0.0" y="52" width="560" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lastName"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="w6R-zq-bEK"/>
                                                 </constraints>
@@ -78,6 +80,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="close" destination="6a6-ZI-ot9" id="NoY-k6-hdi"/>
                         <outlet property="firstName" destination="AK1-Eq-lrd" id="ODd-29-K3b"/>
                         <outlet property="lastName" destination="5W3-Rt-cTY" id="bNU-KZ-awM"/>
                         <outlet property="scrollView" destination="XwX-Pd-EHE" id="3LX-LF-Lq0"/>
