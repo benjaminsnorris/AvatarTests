@@ -16,6 +16,11 @@ class Main: UIViewController {
     @IBOutlet weak var name: UILabel!
     
     
+    // MARK: - Internal properties
+    
+    var personService = PersonService.sharedInstance
+    
+    
     // MARK: - Lifecycle overrides
     
     override func viewDidLoad() {
@@ -37,7 +42,7 @@ class Main: UIViewController {
 private extension Main {
     
     private func update() {
-        guard let person = PersonService.currentPerson else { reset(); return }
+        guard let person = personService.currentPerson else { reset(); return }
         avatar.update(with: person)
         name.text = person.name
     }

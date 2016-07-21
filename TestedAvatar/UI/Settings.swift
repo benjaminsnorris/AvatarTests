@@ -19,7 +19,7 @@ class Settings: UIViewController {
     
     // MARK: - Internal properties
     
-    var personService = PersonService()
+    var personService = PersonService.sharedInstance
     
     
     // MARK: - Lifecycle overrides

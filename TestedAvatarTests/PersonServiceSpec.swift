@@ -20,21 +20,21 @@ class PersonServiceSpec: XCTestCase {
     
     /// test that current person is nil when initialized
     func testThatCurrentPersonIsNilWhenInitialized() {
-        XCTAssertNil(PersonService.currentPerson)
+        XCTAssertNil(service.currentPerson)
     }
     
     /// test that current person is not nil after first name is saved
     func testThatCurrentPersonIsNotNilAfterFirstNameIsSaved() {
-        XCTAssertNil(PersonService.currentPerson)
+        XCTAssertNil(service.currentPerson)
         service.saveFirstName("Sir")
-        XCTAssertNotNil(PersonService.currentPerson)
+        XCTAssertNotNil(service.currentPerson)
     }
     
     /// test that current person is not nil after last name is saved
     func testThatCurrentPersonIsNotNilAfterLastNameIsSaved() {
-        XCTAssertNil(PersonService.currentPerson)
+        XCTAssertNil(service.currentPerson)
         service.saveLastName("Lancelot")
-        XCTAssertNotNil(PersonService.currentPerson)
+        XCTAssertNotNil(service.currentPerson)
     }
 
 }

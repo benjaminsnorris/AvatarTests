@@ -12,19 +12,20 @@ struct PersonService {
     
     // MARK: - Internal properties
     
-    static private(set) var currentPerson: Person?
+    static let sharedInstance = PersonService()
+    private(set) var currentPerson: Person?
     
     
     // MARK: - Internal functions
     
-    func saveFirstName(firstName: String?) {
+    mutating func saveFirstName(firstName: String?) {
         createCurrentIfNeeded()
-        PersonService.currentPerson?.firstName = firstName
+        currentPerson?.firstName = firstName
     }
     
-    func saveLastName(lastName: String?) {
+    mutating func saveLastName(lastName: String?) {
         createCurrentIfNeeded()
-        PersonService.currentPerson?.lastName = lastName
+        currentPerson?.lastName = lastName
     }
     
 }
@@ -34,9 +35,9 @@ struct PersonService {
 
 private extension PersonService {
     
-    private func createCurrentIfNeeded() {
-        guard PersonService.currentPerson == nil else { return }
-        PersonService.currentPerson = Person()
+    private mutating func createCurrentIfNeeded() {
+        guard currentPerson == nil else { return }
+        currentPerson = Person()
     }
     
 }
