@@ -12,12 +12,13 @@
 		70BE4E4C1D410B0100808C83 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E4B1D410B0100808C83 /* Person.swift */; };
 		70BE4E511D41111E00808C83 /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E501D41111E00808C83 /* PersonService.swift */; };
 		70BE4E541D4114FB00808C83 /* AdjustingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E531D4114FB00808C83 /* AdjustingScrollView.swift */; };
+		70BE4E5B1D41173100808C83 /* PersonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E5A1D41173100808C83 /* PersonSpec.swift */; };
+		70BE4E5D1D41175E00808C83 /* PersonServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E5C1D41175E00808C83 /* PersonServiceSpec.swift */; };
 		70EE23561D40FC540009D5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23551D40FC540009D5B6 /* AppDelegate.swift */; };
 		70EE23581D40FC540009D5B6 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23571D40FC540009D5B6 /* Main.swift */; };
 		70EE235B1D40FC540009D5B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE23591D40FC540009D5B6 /* Main.storyboard */; };
 		70EE235D1D40FC540009D5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70EE235C1D40FC540009D5B6 /* Assets.xcassets */; };
 		70EE23601D40FC540009D5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE235E1D40FC540009D5B6 /* LaunchScreen.storyboard */; };
-		70EE236B1D40FC540009D5B6 /* TestedAvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE236A1D40FC540009D5B6 /* TestedAvatarTests.swift */; };
 		70EE23761D40FC540009D5B6 /* TestedAvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23751D40FC540009D5B6 /* TestedAvatarUITests.swift */; };
 		70EE23891D4104220009D5B6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE23871D4104220009D5B6 /* Settings.storyboard */; };
 		70EE238B1D41042C0009D5B6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE238A1D41042C0009D5B6 /* Settings.swift */; };
@@ -46,6 +47,8 @@
 		70BE4E4B1D410B0100808C83 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Data/Person.swift; sourceTree = "<group>"; };
 		70BE4E501D41111E00808C83 /* PersonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonService.swift; path = Services/PersonService.swift; sourceTree = "<group>"; };
 		70BE4E531D4114FB00808C83 /* AdjustingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdjustingScrollView.swift; path = Carthage/Checkouts/SharedHelpers/SharedHelpers/AdjustingScrollView.swift; sourceTree = SOURCE_ROOT; };
+		70BE4E5A1D41173100808C83 /* PersonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSpec.swift; sourceTree = "<group>"; };
+		70BE4E5C1D41175E00808C83 /* PersonServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonServiceSpec.swift; sourceTree = "<group>"; };
 		70EE23521D40FC540009D5B6 /* TestedAvatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestedAvatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE23551D40FC540009D5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EE23571D40FC540009D5B6 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = UI/Main.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		70EE235F1D40FC540009D5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70EE23611D40FC540009D5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		70EE23661D40FC540009D5B6 /* TestedAvatarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestedAvatarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		70EE236A1D40FC540009D5B6 /* TestedAvatarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestedAvatarTests.swift; sourceTree = "<group>"; };
 		70EE236C1D40FC540009D5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70EE23711D40FC540009D5B6 /* TestedAvatarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestedAvatarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE23751D40FC540009D5B6 /* TestedAvatarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestedAvatarUITests.swift; sourceTree = "<group>"; };
@@ -130,6 +132,38 @@
 			name = SharedHelpers;
 			sourceTree = "<group>";
 		};
+		70BE4E551D41168B00808C83 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				70BE4E5A1D41173100808C83 /* PersonSpec.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		70BE4E561D41169700808C83 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70BE4E5C1D41175E00808C83 /* PersonServiceSpec.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		70BE4E571D4116A500808C83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70EE236C1D40FC540009D5B6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70BE4E591D4116BB00808C83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70EE23771D40FC540009D5B6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		70EE23491D40FC540009D5B6 = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +200,9 @@
 		70EE23691D40FC540009D5B6 /* TestedAvatarTests */ = {
 			isa = PBXGroup;
 			children = (
-				70EE236A1D40FC540009D5B6 /* TestedAvatarTests.swift */,
-				70EE236C1D40FC540009D5B6 /* Info.plist */,
+				70BE4E551D41168B00808C83 /* Data */,
+				70BE4E561D41169700808C83 /* Services */,
+				70BE4E571D4116A500808C83 /* Supporting Files */,
 			);
 			path = TestedAvatarTests;
 			sourceTree = "<group>";
@@ -176,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				70EE23751D40FC540009D5B6 /* TestedAvatarUITests.swift */,
-				70EE23771D40FC540009D5B6 /* Info.plist */,
+				70BE4E591D4116BB00808C83 /* Supporting Files */,
 			);
 			path = TestedAvatarUITests;
 			sourceTree = "<group>";
@@ -373,7 +408,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70EE236B1D40FC540009D5B6 /* TestedAvatarTests.swift in Sources */,
+				70BE4E5B1D41173100808C83 /* PersonSpec.swift in Sources */,
+				70BE4E5D1D41175E00808C83 /* PersonServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,10 +575,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestedAvatarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.bsn.TestedAvatarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestedAvatar.app/TestedAvatar";
 			};
 			name = Debug;
@@ -551,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestedAvatarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.bsn.TestedAvatarTests;
