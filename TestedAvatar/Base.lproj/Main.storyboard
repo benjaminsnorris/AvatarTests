@@ -24,6 +24,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77U-Ye-mwl" customClass="AvatarView" customModule="TestedAvatar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         <color key="backgroundColor" red="0.72156862745098038" green="0.9137254901960784" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="avatar"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="Qc0-kF-nXr"/>
                                             <constraint firstAttribute="width" secondItem="77U-Ye-mwl" secondAttribute="height" multiplier="1:1" id="pKK-lA-D7M"/>
@@ -39,6 +40,7 @@
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbm-Ey-lem">
                                         <rect key="frame" x="0.0" y="216" width="200" height="29"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="nameLabel"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                         <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -63,6 +65,7 @@
                     <connections>
                         <outlet property="avatar" destination="77U-Ye-mwl" id="YE4-Kx-d1h"/>
                         <outlet property="name" destination="Cbm-Ey-lem" id="TUe-Do-Gme"/>
+                        <outlet property="settings" destination="5Ei-J5-rYN" id="g64-cR-xOA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,6 +14,7 @@ class Main: UIViewController {
     
     @IBOutlet weak var avatar: AvatarView!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var settings: UIBarButtonItem!
     
     
     // MARK: - Internal properties
@@ -26,6 +27,7 @@ class Main: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         update()
+        settings.accessibilityLabel = NSLocalizedString("Settings", comment: "Button title")
     }
     
     // MARK: - Navigation
