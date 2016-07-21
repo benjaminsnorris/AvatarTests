@@ -47,12 +47,23 @@
                     <navigationItem key="navigationItem" id="6Bh-Kx-diE">
                         <barButtonItem key="leftBarButtonItem" image="Cog-small" id="5Ei-J5-rYN">
                             <color key="tintColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="m8T-wN-xBL" kind="presentation" modalPresentationStyle="formSheet" id="ziK-sz-5xo"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1092" y="398"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="out-Tw-FEE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="m8T-wN-xBL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reU-fZ-8xW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563.5" y="398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i91-uc-eBh">

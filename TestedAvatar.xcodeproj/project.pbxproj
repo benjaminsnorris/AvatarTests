@@ -14,6 +14,8 @@
 		70EE23601D40FC540009D5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE235E1D40FC540009D5B6 /* LaunchScreen.storyboard */; };
 		70EE236B1D40FC540009D5B6 /* TestedAvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE236A1D40FC540009D5B6 /* TestedAvatarTests.swift */; };
 		70EE23761D40FC540009D5B6 /* TestedAvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23751D40FC540009D5B6 /* TestedAvatarUITests.swift */; };
+		70EE23891D4104220009D5B6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE23871D4104220009D5B6 /* Settings.storyboard */; };
+		70EE238B1D41042C0009D5B6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE238A1D41042C0009D5B6 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		70EE23711D40FC540009D5B6 /* TestedAvatarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestedAvatarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE23751D40FC540009D5B6 /* TestedAvatarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestedAvatarUITests.swift; sourceTree = "<group>"; };
 		70EE23771D40FC540009D5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EE23881D4104220009D5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		70EE238A1D41042C0009D5B6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = UI/Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			children = (
 				70EE23851D41004A0009D5B6 /* Launch */,
 				70EE23861D4100650009D5B6 /* Main */,
+				70EE238C1D4104310009D5B6 /* Settings */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -155,6 +160,15 @@
 				70EE23571D40FC540009D5B6 /* Main.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		70EE238C1D4104310009D5B6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				70EE23871D4104220009D5B6 /* Settings.storyboard */,
+				70EE238A1D41042C0009D5B6 /* Settings.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,7 @@
 				70EE23601D40FC540009D5B6 /* LaunchScreen.storyboard in Resources */,
 				70EE235D1D40FC540009D5B6 /* Assets.xcassets in Resources */,
 				70EE235B1D40FC540009D5B6 /* Main.storyboard in Resources */,
+				70EE23891D4104220009D5B6 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EE238B1D41042C0009D5B6 /* Settings.swift in Sources */,
 				70EE23581D40FC540009D5B6 /* Main.swift in Sources */,
 				70EE23561D40FC540009D5B6 /* AppDelegate.swift in Sources */,
 			);
@@ -339,6 +355,14 @@
 				70EE235F1D40FC540009D5B6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		70EE23871D4104220009D5B6 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70EE23881D4104220009D5B6 /* Base */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,7 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TestedAvatar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestedAvatar/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.bsn.TestedAvatar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TestedAvatar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestedAvatar/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.bsn.TestedAvatar;
 				PRODUCT_NAME = "$(TARGET_NAME)";

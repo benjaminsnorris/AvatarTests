@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Su-9v-KQd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="BVc-Pq-RNZ">
+            <objects>
+                <viewController id="1eP-RE-dRX" customClass="Settings" customModule="TestedAvatar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wpc-hY-ZoJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TEh-AJ-7JJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VxW-VZ-r40">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uGy-02-fP4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="6a6-ZI-ot9">
+                            <color key="tintColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="fPD-w2-wIw" kind="unwind" unwindAction="unwindToMain:" id="oip-T0-pds"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTg-Oi-CM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fPD-w2-wIw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P4Z-RR-Q7g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Su-9v-KQd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XVK-zd-Hx4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1eP-RE-dRX" kind="relationship" relationship="rootViewController" id="dsp-5s-odP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y39-mz-AqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="371"/>
+        </scene>
+    </scenes>
+</document>
