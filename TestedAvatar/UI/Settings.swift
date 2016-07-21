@@ -32,6 +32,13 @@ class Settings: UIViewController {
         close.accessibilityLabel = NSLocalizedString("Close", comment: "Button title")
     }
     
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        view.endEditing(true)
+    }
+    
 }
 
 
