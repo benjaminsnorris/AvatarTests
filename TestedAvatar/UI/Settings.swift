@@ -30,6 +30,10 @@ class Settings: UIViewController {
         registerForKeyboardNotifications()
         
         close.accessibilityLabel = NSLocalizedString("Close", comment: "Button title")
+        
+        guard let person = personService.currentPerson else { return }
+        firstName.text = person.firstName
+        lastName.text = person.lastName
     }
     
     
