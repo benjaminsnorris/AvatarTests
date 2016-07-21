@@ -11,6 +11,7 @@
 		70BE4E471D410A5B00808C83 /* NamePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E451D410A5B00808C83 /* NamePresentable.swift */; };
 		70BE4E4C1D410B0100808C83 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E4B1D410B0100808C83 /* Person.swift */; };
 		70BE4E511D41111E00808C83 /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E501D41111E00808C83 /* PersonService.swift */; };
+		70BE4E541D4114FB00808C83 /* AdjustingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE4E531D4114FB00808C83 /* AdjustingScrollView.swift */; };
 		70EE23561D40FC540009D5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23551D40FC540009D5B6 /* AppDelegate.swift */; };
 		70EE23581D40FC540009D5B6 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE23571D40FC540009D5B6 /* Main.swift */; };
 		70EE235B1D40FC540009D5B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE23591D40FC540009D5B6 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		70BE4E451D410A5B00808C83 /* NamePresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NamePresentable.swift; path = Carthage/Checkouts/AvatarView/AvatarView/NamePresentable.swift; sourceTree = SOURCE_ROOT; };
 		70BE4E4B1D410B0100808C83 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Data/Person.swift; sourceTree = "<group>"; };
 		70BE4E501D41111E00808C83 /* PersonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonService.swift; path = Services/PersonService.swift; sourceTree = "<group>"; };
+		70BE4E531D4114FB00808C83 /* AdjustingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdjustingScrollView.swift; path = Carthage/Checkouts/SharedHelpers/SharedHelpers/AdjustingScrollView.swift; sourceTree = SOURCE_ROOT; };
 		70EE23521D40FC540009D5B6 /* TestedAvatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestedAvatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE23551D40FC540009D5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EE23571D40FC540009D5B6 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = UI/Main.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				70BE4E481D410A6100808C83 /* AvatarView */,
+				70BE4E521D4114CE00808C83 /* SharedHelpers */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -117,6 +120,14 @@
 				70BE4E501D41111E00808C83 /* PersonService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		70BE4E521D4114CE00808C83 /* SharedHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				70BE4E531D4114FB00808C83 /* AdjustingScrollView.swift */,
+			);
+			name = SharedHelpers;
 			sourceTree = "<group>";
 		};
 		70EE23491D40FC540009D5B6 = {
@@ -354,6 +365,7 @@
 				70EE23581D40FC540009D5B6 /* Main.swift in Sources */,
 				70EE23561D40FC540009D5B6 /* AppDelegate.swift in Sources */,
 				70BE4E471D410A5B00808C83 /* NamePresentable.swift in Sources */,
+				70BE4E541D4114FB00808C83 /* AdjustingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

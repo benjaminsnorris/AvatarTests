@@ -1,1 +1,2 @@
 github "benjaminsnorris/AvatarView" ~> 0.9
+github "benjaminsnorris/SharedHelpers" ~> 0.9
