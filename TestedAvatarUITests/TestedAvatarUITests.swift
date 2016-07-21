@@ -39,6 +39,7 @@ class TestedAvatarUITests: XCTestCase {
         XCTAssertEqual(avatar.label, "Avatar for Lancelot")
         
         settings.tap()
+        XCTAssertEqual(lastName.value as? String, "Lancelot")
         let firstName = application.textFields["firstName"]
         firstName.tap()
         firstName.typeText("Sir\n")
