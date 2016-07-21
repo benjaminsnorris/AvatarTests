@@ -14,6 +14,34 @@ class Settings: UIViewController {
     
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    // MARK: - Lifecycle overrides
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        registerForKeyboardNotifications()
+    }
+    
+}
+
+
+// MARK: - Adjusting scroll view
+
+extension Settings: AdjustingScrollView {
+    
+    var scrollViewToAdjust: UIScrollView? {
+        return scrollView
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        keyboardWillAppear(notification)
+    }
+    
+    func keyboardWillHide() {
+        keyboardWillDisappear()
+    }
     
 }
 

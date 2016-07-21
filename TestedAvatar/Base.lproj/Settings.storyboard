@@ -80,6 +80,7 @@
                     <connections>
                         <outlet property="firstName" destination="AK1-Eq-lrd" id="ODd-29-K3b"/>
                         <outlet property="lastName" destination="5W3-Rt-cTY" id="bNU-KZ-awM"/>
+                        <outlet property="scrollView" destination="XwX-Pd-EHE" id="3LX-LF-Lq0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTg-Oi-CM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
