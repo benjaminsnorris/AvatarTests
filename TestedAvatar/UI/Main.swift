@@ -12,6 +12,9 @@ class Main: UIViewController {
 
     // MARK: - IB properties
     
+    @IBOutlet weak var avatar: AvatarView!
+    @IBOutlet weak var name: UILabel!
+    
     
     // MARK: - Internal properties
     
