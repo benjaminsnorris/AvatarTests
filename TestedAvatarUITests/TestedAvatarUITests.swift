@@ -19,6 +19,7 @@ class TestedAvatarUITests: XCTestCase {
     /// test that it updates properly
     func testThatItUpdatesProperly() {
         let application = XCUIApplication()
+        sleep(1)
         
         let avatar = application.otherElements["avatar"]
         let name = application.staticTexts["nameLabel"]
