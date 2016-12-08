@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Su-9v-KQd">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Su-9v-KQd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -15,22 +19,22 @@
                         <viewControllerLayoutGuide type="bottom" id="TEh-AJ-7JJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VxW-VZ-r40">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Pd-EHE">
-                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ni9-Oz-Yr7">
-                                        <rect key="frame" x="0.0" y="16" width="560" height="96"/>
+                                        <rect key="frame" x="0.0" y="16" width="343" height="96"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-Eq-lrd">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="firstName"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="qkL-IM-5oZ"/>
                                                 </constraints>
-                                                <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -38,12 +42,12 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-Rt-cTY">
-                                                <rect key="frame" x="0.0" y="52" width="560" height="44"/>
+                                                <rect key="frame" x="0.0" y="52" width="343" height="44"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="lastName"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="w6R-zq-bEK"/>
                                                 </constraints>
-                                                <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.058823529630000003" green="0.16078431900000001" blue="0.2823529541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -61,7 +65,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ni9-Oz-Yr7" firstAttribute="leading" secondItem="VxW-VZ-r40" secondAttribute="leadingMargin" id="BWW-zc-IcY"/>
                             <constraint firstItem="TEh-AJ-7JJ" firstAttribute="top" secondItem="XwX-Pd-EHE" secondAttribute="bottom" id="D2s-lZ-qDy"/>
@@ -73,7 +77,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uGy-02-fP4">
                         <barButtonItem key="rightBarButtonItem" systemItem="stop" id="6a6-ZI-ot9">
-                            <color key="tintColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="fPD-w2-wIw" kind="unwind" unwindAction="unwindToMain:" id="oip-T0-pds"/>
                             </connections>
