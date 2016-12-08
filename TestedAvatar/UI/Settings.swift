@@ -39,7 +39,7 @@ class Settings: UIViewController {
     
     // MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         view.endEditing(true)
     }
     
@@ -54,7 +54,7 @@ extension Settings: AdjustingScrollView {
         return scrollView
     }
     
-    func keyboardWillShow(notification: NSNotification) {
+    func keyboardWillShow(_ notification: Notification) {
         keyboardWillAppear(notification)
     }
     
@@ -69,12 +69,12 @@ extension Settings: AdjustingScrollView {
 
 extension Settings: UITextFieldDelegate {
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == firstName {
             personService.saveFirstName(textField.text)
         } else if textField == lastName {

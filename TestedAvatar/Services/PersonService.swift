@@ -13,17 +13,17 @@ class PersonService {
     // MARK: - Internal properties
     
     static var sharedInstance = PersonService()
-    private(set) var currentPerson: Person?
+    fileprivate(set) var currentPerson: Person?
     
     
     // MARK: - Internal functions
     
-    func saveFirstName(firstName: String?) {
+    func saveFirstName(_ firstName: String?) {
         createCurrentIfNeeded()
         currentPerson?.firstName = firstName
     }
     
-    func saveLastName(lastName: String?) {
+    func saveLastName(_ lastName: String?) {
         createCurrentIfNeeded()
         currentPerson?.lastName = lastName
     }
@@ -35,7 +35,7 @@ class PersonService {
 
 private extension PersonService {
     
-    private func createCurrentIfNeeded() {
+    func createCurrentIfNeeded() {
         guard currentPerson == nil else { return }
         currentPerson = Person()
     }

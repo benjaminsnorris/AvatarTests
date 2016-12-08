@@ -32,7 +32,7 @@ class Main: UIViewController {
     
     // MARK: - Navigation
     
-    @IBAction func unwindToMain(segue: UIStoryboardSegue) {
+    @IBAction func unwindToMain(_ segue: UIStoryboardSegue) {
         update()
     }
 
@@ -43,14 +43,14 @@ class Main: UIViewController {
 
 private extension Main {
     
-    private func update() {
+    func update() {
         guard let person = personService.currentPerson else { reset(); return }
         avatar.update(with: person)
         avatar.accessibilityLabel = String.localizedStringWithFormat(NSLocalizedString("Avatar for %@", comment: "Parameter is the person's name"), person.name)
         name.text = person.name
     }
     
-    private func reset() {
+    func reset() {
         avatar.reset()
         name.text = nil
     }

@@ -20,7 +20,7 @@ struct Person {
     // MARK: - Initializers
     
     init(firstName: String? = nil, lastName: String? = nil) {
-        self.id = NSDate().timeIntervalSince1970
+        self.id = Date().timeIntervalSince1970
         self.firstName = firstName
         self.lastName = lastName
     }
