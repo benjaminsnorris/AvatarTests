@@ -22,9 +22,7 @@ class TestedAvatarUITests: XCTestCase {
         sleep(1)
         
         let avatar = application.otherElements["avatar"]
-        let name = application.staticTexts["nameLabel"]
         XCTAssertTrue(avatar.exists)
-        XCTAssertTrue(name.exists)
 
         let settings = application.navigationBars.buttons["Settings"]
         XCTAssertTrue(settings.exists)
@@ -36,6 +34,8 @@ class TestedAvatarUITests: XCTestCase {
         let close = application.navigationBars.buttons["Close"]
         close.tap()
         
+        let name = application.staticTexts["nameLabel"]
+        XCTAssertTrue(name.exists)
         XCTAssertEqual(name.label, "Lancelot")
         XCTAssertEqual(avatar.label, "Avatar for Lancelot")
         
